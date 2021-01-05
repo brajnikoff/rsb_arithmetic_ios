@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		309B5BE025A4264E00CB80EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309B5BDF25A4264E00CB80EC /* AppDelegate.swift */; };
 		309B5BE225A4264E00CB80EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309B5BE125A4264E00CB80EC /* SceneDelegate.swift */; };
-		309B5BE425A4264E00CB80EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309B5BE325A4264E00CB80EC /* ViewController.swift */; };
 		309B5BE725A4264E00CB80EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 309B5BE525A4264E00CB80EC /* Main.storyboard */; };
 		309B5BE925A4265500CB80EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 309B5BE825A4265500CB80EC /* Assets.xcassets */; };
 		309B5BEC25A4265500CB80EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 309B5BEA25A4265500CB80EC /* LaunchScreen.storyboard */; };
+		309B5BF925A430FB00CB80EC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309B5BF825A430FB00CB80EC /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		309B5BDC25A4264E00CB80EC /* rsb_arithmetic_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rsb_arithmetic_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		309B5BDF25A4264E00CB80EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		309B5BE125A4264E00CB80EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		309B5BE325A4264E00CB80EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		309B5BE625A4264E00CB80EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		309B5BE825A4265500CB80EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		309B5BEB25A4265500CB80EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		309B5BED25A4265500CB80EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		309B5BF825A430FB00CB80EC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,23 @@
 		309B5BDE25A4264E00CB80EC /* rsb_arithmetic_ios */ = {
 			isa = PBXGroup;
 			children = (
-				309B5BDF25A4264E00CB80EC /* AppDelegate.swift */,
-				309B5BE125A4264E00CB80EC /* SceneDelegate.swift */,
-				309B5BE325A4264E00CB80EC /* ViewController.swift */,
+				309B5BF425A42FF800CB80EC /* App */,
 				309B5BE525A4264E00CB80EC /* Main.storyboard */,
+				309B5BF825A430FB00CB80EC /* MainViewController.swift */,
 				309B5BE825A4265500CB80EC /* Assets.xcassets */,
-				309B5BEA25A4265500CB80EC /* LaunchScreen.storyboard */,
-				309B5BED25A4265500CB80EC /* Info.plist */,
 			);
 			path = rsb_arithmetic_ios;
+			sourceTree = "<group>";
+		};
+		309B5BF425A42FF800CB80EC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				309B5BEA25A4265500CB80EC /* LaunchScreen.storyboard */,
+				309B5BDF25A4264E00CB80EC /* AppDelegate.swift */,
+				309B5BE125A4264E00CB80EC /* SceneDelegate.swift */,
+				309B5BED25A4265500CB80EC /* Info.plist */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				309B5BE425A4264E00CB80EC /* ViewController.swift in Sources */,
+				309B5BF925A430FB00CB80EC /* MainViewController.swift in Sources */,
 				309B5BE025A4264E00CB80EC /* AppDelegate.swift in Sources */,
 				309B5BE225A4264E00CB80EC /* SceneDelegate.swift in Sources */,
 			);
@@ -288,7 +296,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P3HJAZRP24;
-				INFOPLIST_FILE = rsb_arithmetic_ios/Info.plist;
+				INFOPLIST_FILE = rsb_arithmetic_ios/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +315,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P3HJAZRP24;
-				INFOPLIST_FILE = rsb_arithmetic_ios/Info.plist;
+				INFOPLIST_FILE = rsb_arithmetic_ios/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
