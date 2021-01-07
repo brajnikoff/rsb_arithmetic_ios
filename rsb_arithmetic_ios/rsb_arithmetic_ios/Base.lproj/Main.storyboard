@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yhY-yW-DH6">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -16,41 +17,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="Thy-tP-eFB">
-                                <rect key="frame" x="16" y="152.5" width="382" height="148.5"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l4D-KB-hvF" userLabel="Container View">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZH-xf-Dnc" userLabel="Task Label">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z6C-bk-6xE">
-                                        <rect key="frame" x="0.0" y="52.5" width="382" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erB-LB-Oaw">
-                                        <rect key="frame" x="0.0" y="118.5" width="382" height="30"/>
-                                        <state key="normal" title="Button"/>
-                                        <connections>
-                                            <action selector="answerButtonTapped:" destination="yhY-yW-DH6" eventType="touchUpInside" id="nhY-oS-Ob1"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="Thy-tP-eFB">
+                                        <rect key="frame" x="0.0" y="352" width="414" height="148.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZH-xf-Dnc" userLabel="Task Label">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z6C-bk-6xE">
+                                                <rect key="frame" x="0.0" y="52.5" width="414" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="done"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erB-LB-Oaw">
+                                                <rect key="frame" x="0.0" y="118.5" width="414" height="30"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="answerButtonTapped:" destination="yhY-yW-DH6" eventType="touchUpInside" id="nhY-oS-Ob1"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
-                            </stackView>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Thy-tP-eFB" firstAttribute="centerY" secondItem="l4D-KB-hvF" secondAttribute="centerY" id="Ki3-5a-757"/>
+                                    <constraint firstItem="Thy-tP-eFB" firstAttribute="leading" secondItem="l4D-KB-hvF" secondAttribute="leading" id="W2Y-iZ-a3Q"/>
+                                    <constraint firstAttribute="trailing" secondItem="Thy-tP-eFB" secondAttribute="trailing" id="nPO-w3-gRf"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ujz-Qs-fvz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Thy-tP-eFB" firstAttribute="centerY" secondItem="ujz-Qs-fvz" secondAttribute="centerY" multiplier="0.5" id="1CN-QS-283"/>
-                            <constraint firstItem="Thy-tP-eFB" firstAttribute="leading" secondItem="ujz-Qs-fvz" secondAttribute="leading" constant="16" id="LHy-1p-Qa4"/>
-                            <constraint firstItem="ujz-Qs-fvz" firstAttribute="trailing" secondItem="Thy-tP-eFB" secondAttribute="trailing" constant="16" id="Vws-97-eHG"/>
+                            <constraint firstItem="l4D-KB-hvF" firstAttribute="top" secondItem="ujz-Qs-fvz" secondAttribute="top" id="Gug-Rf-qAF"/>
+                            <constraint firstAttribute="bottom" secondItem="l4D-KB-hvF" secondAttribute="bottom" id="Pe0-oS-PNv"/>
+                            <constraint firstItem="l4D-KB-hvF" firstAttribute="leading" secondItem="ujz-Qs-fvz" secondAttribute="leading" id="dgc-vz-PzF"/>
+                            <constraint firstItem="ujz-Qs-fvz" firstAttribute="trailing" secondItem="l4D-KB-hvF" secondAttribute="trailing" id="z1Y-fS-85M"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="answerButton" destination="erB-LB-Oaw" id="GE2-XU-4Cc"/>
                         <outlet property="answerTextField" destination="z6C-bk-6xE" id="nTb-5q-6Y9"/>
+                        <outlet property="containerView" destination="l4D-KB-hvF" id="cf1-ZH-RCw"/>
                         <outlet property="taskLabel" destination="sZH-xf-Dnc" id="DH3-ae-mby"/>
                     </connections>
                 </viewController>

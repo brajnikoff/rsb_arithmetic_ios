@@ -26,6 +26,7 @@ class MainViewController: UIViewController {
     private var taskCount = 5
     
     // MARK: - Outlets
+    @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var taskLabel: UILabel!
     @IBOutlet weak var answerTextField: UITextField!
     @IBOutlet weak var answerButton: UIButton!
@@ -33,7 +34,15 @@ class MainViewController: UIViewController {
     // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureUI()
         newTask()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
+            self?.answerTextField.becomeFirstResponder()
+        }
     }
     
     // MARK: - Actions
@@ -48,6 +57,10 @@ class MainViewController: UIViewController {
     }
     
     // MARK: - Logic
+    private func configureUI() {
+        
+    }
+    
     private func newTask() {
         operand_1 = Int.random(in: 0...rangeMaximum)
         operand_2 = Int.random(in: 0...rangeMaximum)
