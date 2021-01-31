@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		303AF17D25C68C8B00009B78 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AF17C25C68C8B00009B78 /* BaseViewController.swift */; };
 		309B5BE025A4264E00CB80EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309B5BDF25A4264E00CB80EC /* AppDelegate.swift */; };
 		309B5BE225A4264E00CB80EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309B5BE125A4264E00CB80EC /* SceneDelegate.swift */; };
 		309B5BE725A4264E00CB80EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 309B5BE525A4264E00CB80EC /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		303AF17C25C68C8B00009B78 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		309B5BDC25A4264E00CB80EC /* rsb_arithmetic_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rsb_arithmetic_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		309B5BDF25A4264E00CB80EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		309B5BE125A4264E00CB80EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				309B5BE525A4264E00CB80EC /* Main.storyboard */,
 				309B5BF825A430FB00CB80EC /* MainViewController.swift */,
 				309B5BE825A4265500CB80EC /* Assets.xcassets */,
+				303AF17C25C68C8B00009B78 /* BaseViewController.swift */,
 			);
 			path = rsb_arithmetic_ios;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				309B5BF925A430FB00CB80EC /* MainViewController.swift in Sources */,
+				303AF17D25C68C8B00009B78 /* BaseViewController.swift in Sources */,
 				309B5BE025A4264E00CB80EC /* AppDelegate.swift in Sources */,
 				309B5BE225A4264E00CB80EC /* SceneDelegate.swift in Sources */,
 			);

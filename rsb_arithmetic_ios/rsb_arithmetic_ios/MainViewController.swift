@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: BaseViewController {
     // MARK: - Properties
     private let rangeMaximum = 9
     private var operand_1: Int = .zero
@@ -30,6 +30,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var taskLabel: UILabel!
     @IBOutlet weak var answerTextField: UITextField!
     @IBOutlet weak var answerButton: UIButton!
+    @IBOutlet weak var bottomContainerConstraint: NSLayoutConstraint!
     
     // MARK: - Life cycle
     override func viewDidLoad() {
@@ -53,6 +54,14 @@ class MainViewController: UIViewController {
             handle(answer: answer)
         } else {
             print("Input error")
+        }
+    }
+    
+    override func onKeyboardHeightChanged(height: CGFloat, duration: Double) {
+        print("\(#function)")
+        bottomContainerConstraint.constant = height
+        UIView.animate(withDuration: duration) {
+            self.view.layoutIfNeeded()
         }
     }
     

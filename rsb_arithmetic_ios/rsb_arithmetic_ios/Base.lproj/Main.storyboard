@@ -64,6 +64,7 @@
                     <connections>
                         <outlet property="answerButton" destination="erB-LB-Oaw" id="GE2-XU-4Cc"/>
                         <outlet property="answerTextField" destination="z6C-bk-6xE" id="nTb-5q-6Y9"/>
+                        <outlet property="bottomContainerConstraint" destination="Pe0-oS-PNv" id="dUh-rS-LeF"/>
                         <outlet property="containerView" destination="l4D-KB-hvF" id="cf1-ZH-RCw"/>
                         <outlet property="taskLabel" destination="sZH-xf-Dnc" id="DH3-ae-mby"/>
                     </connections>
