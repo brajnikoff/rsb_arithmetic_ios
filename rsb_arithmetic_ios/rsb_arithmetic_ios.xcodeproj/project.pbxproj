@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		303AF17D25C68C8B00009B78 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AF17C25C68C8B00009B78 /* BaseViewController.swift */; };
 		308E346D25EA129400CBD9F4 /* ChooseOperationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308E346C25EA129400CBD9F4 /* ChooseOperationViewController.swift */; };
+		308E347125EA2F3200CBD9F4 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308E347025EA2F3200CBD9F4 /* GameViewController.swift */; };
+		308E347425EA316A00CBD9F4 /* UIDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308E347325EA316A00CBD9F4 /* UIDemoViewController.swift */; };
+		308E347725EA69C600CBD9F4 /* InfoAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308E347625EA69C600CBD9F4 /* InfoAlertViewController.swift */; };
 		309B5BE025A4264E00CB80EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309B5BDF25A4264E00CB80EC /* AppDelegate.swift */; };
 		309B5BE225A4264E00CB80EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309B5BE125A4264E00CB80EC /* SceneDelegate.swift */; };
 		309B5BE725A4264E00CB80EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 309B5BE525A4264E00CB80EC /* Main.storyboard */; };
@@ -19,6 +22,9 @@
 /* Begin PBXFileReference section */
 		303AF17C25C68C8B00009B78 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		308E346C25EA129400CBD9F4 /* ChooseOperationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseOperationViewController.swift; sourceTree = "<group>"; };
+		308E347025EA2F3200CBD9F4 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		308E347325EA316A00CBD9F4 /* UIDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDemoViewController.swift; sourceTree = "<group>"; };
+		308E347625EA69C600CBD9F4 /* InfoAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoAlertViewController.swift; sourceTree = "<group>"; };
 		309B5BDC25A4264E00CB80EC /* rsb_arithmetic_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rsb_arithmetic_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		309B5BDF25A4264E00CB80EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		309B5BE125A4264E00CB80EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +66,9 @@
 			children = (
 				309B5BF425A42FF800CB80EC /* App */,
 				309B5BE525A4264E00CB80EC /* Main.storyboard */,
+				308E347625EA69C600CBD9F4 /* InfoAlertViewController.swift */,
+				308E347325EA316A00CBD9F4 /* UIDemoViewController.swift */,
+				308E347025EA2F3200CBD9F4 /* GameViewController.swift */,
 				309B5BE825A4265500CB80EC /* Assets.xcassets */,
 				303AF17C25C68C8B00009B78 /* BaseViewController.swift */,
 				308E346C25EA129400CBD9F4 /* ChooseOperationViewController.swift */,
@@ -148,8 +157,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				308E347125EA2F3200CBD9F4 /* GameViewController.swift in Sources */,
+				308E347725EA69C600CBD9F4 /* InfoAlertViewController.swift in Sources */,
 				308E346D25EA129400CBD9F4 /* ChooseOperationViewController.swift in Sources */,
 				303AF17D25C68C8B00009B78 /* BaseViewController.swift in Sources */,
+				308E347425EA316A00CBD9F4 /* UIDemoViewController.swift in Sources */,
 				309B5BE025A4264E00CB80EC /* AppDelegate.swift in Sources */,
 				309B5BE225A4264E00CB80EC /* SceneDelegate.swift in Sources */,
 			);
